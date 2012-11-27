@@ -12,7 +12,7 @@ def update():
     if r.status == 200:
         data = r.read()
         conn.close()
-        d = json.loads(data)
-        return d['temp']
     else:
         sys.exit(1)
+
+update
